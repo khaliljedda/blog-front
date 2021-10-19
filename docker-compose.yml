@@ -1,0 +1,16 @@
+version: '3'
+services:
+    web:
+        build:
+           context: .
+           dockerfile: Dockerfile-dev
+       
+        #image: vueprod    
+        environment:
+            API_URL: https://api.callstrategy.fr/api/
+        
+        ports: 
+            - "8080:8080"
+        volumes:
+            - "/app/node_modules" 
+            - ".:/app"
