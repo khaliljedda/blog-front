@@ -7,7 +7,7 @@ services:
        
         #image: vueprod    
         environment:
-            API_URL: https://api.callstrategy.fr/api/
+            API_URL: "https://api.callstrategy.fr/api/"
         
         ports: 
             - "8080:8080"
