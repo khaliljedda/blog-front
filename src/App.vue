@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <div class="header">
-  <h2>Simple Test Blog </h2>
+  <h2>Simple Test Blog v 1</h2>
 </div>
 
 <div class="row">
