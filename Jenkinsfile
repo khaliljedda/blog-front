@@ -7,6 +7,7 @@ pipeline {
     }}
         stage('Docker Build and Tag') {
             steps {
+                sh 'npm run build'
                 sh 'docker build -t blogfront:V1 .'
                 sh 'docker tag blogfront khalil4/blogfront:V1'
                 sh 'docker tag blogfront khalil4/blogfront:V1'
